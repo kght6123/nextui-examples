@@ -12,4 +12,6 @@ $ pnpm --version
 
 ```bash
 $ pnpm init
+# pnpm-workspace.yaml を作成
 ```
+
