@@ -35,5 +35,6 @@ $ pnpm run dev
 $ cd ../..
 $ pnpm react-aria-example dev
 $ pnpm react-aria-example add -E react-aria-components
+$ pnpm react-aria-example add -E react-aria
 ```
 
