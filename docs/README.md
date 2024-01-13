@@ -15,7 +15,7 @@ $ pnpm init
 # pnpm-workspace.yaml を作成
 $ mkdir -p packages
 $ cd packages
-% pnpm create vite 
+% pnpm create vite
 ../../.pnpm-store/v3/tmp/dlx-31777       |   +1 +
 ../../.pnpm-store/v3/tmp/dlx-31777       | Progress: resolved 1, reused 0, downloaded 1, added 1, done
 ✔ Project name: … react-aria-example

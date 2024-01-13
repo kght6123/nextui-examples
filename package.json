@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "react-aria-example": "pnpm -C packages/react-aria-example"
+    "react-aria-example": "pnpm -C packages/react-aria-example",
+    "nextui-vite-example": "pnpm -C packages/examples/nextui/vite/nextui-vite-example"
   },
   "keywords": [],
   "author": "",
