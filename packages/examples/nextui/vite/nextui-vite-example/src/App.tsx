@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { AvatarList } from './ui/molecules/avatarList'
+import Breadcrumb from './ui/molecules/breadcrumb'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,7 +30,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <AvatarList />
+      <section className="flex flex-col">
+        <AvatarList />
+        <Breadcrumb />
+      </section>
     </>
   )
 }
