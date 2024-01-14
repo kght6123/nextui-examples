@@ -1,7 +1,7 @@
 import { Avatar } from "@nextui-org/react";
 
 export function AvatarList() {
-	return (
+  return (
     <div className="flex gap-3 items-center">
       <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
       <Avatar name="Junior" />

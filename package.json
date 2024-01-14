@@ -6,9 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-aria-example": "pnpm -C packages/react-aria-example",
-    "nextui-vite-example": "pnpm -C packages/examples/nextui/vite/nextui-vite-example"
+    "nextui-vite-example": "pnpm -C packages/examples/nextui/vite/nextui-vite-example",
+    "check": "pnpm dlx @biomejs/biome check --apply ./packages *.json"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.1"
+  }
 }
