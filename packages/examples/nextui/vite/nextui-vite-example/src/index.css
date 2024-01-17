@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 :root {
+  /* For rgb(255 115 179 / ‹alpha-value >) */
+  /* --color-primary: 255 115 179; */
+
+  /* For hsl(198deg 93% 60% / <alpha-value>) */
+  /* --color-primary: 198deg 93% 60%; */
+
+  /* For rgba(255, 115, 179, ‹alpha-value>) */
+  --color-primary: 255, 115, 179;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

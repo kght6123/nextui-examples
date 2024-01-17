@@ -48,6 +48,7 @@ function App() {
           Responsive
         </Button>
         <MyButton>My Button</MyButton>
+        <div className="bg-primary w-32 h-32"/>
       </section>
     </>
   );
