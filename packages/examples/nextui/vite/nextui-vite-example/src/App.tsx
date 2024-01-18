@@ -6,6 +6,7 @@ import reactLogo from "./assets/react.svg";
 import { AvatarList } from "./ui/molecules/avatarList";
 import Breadcrumb from "./ui/molecules/breadcrumb";
 import MyButton from "./ui/atoms/myButton";
+import Input from "./ui/atoms/input";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -49,6 +50,9 @@ function App() {
         </Button>
         <MyButton>My Button</MyButton>
         <div className="bg-primary w-32 h-32"/>
+      </section>
+      <section className="flex flex-col p-4 gap-4">
+        <Input />
       </section>
     </>
   );
