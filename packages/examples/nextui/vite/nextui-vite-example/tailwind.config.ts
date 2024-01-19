@@ -17,8 +17,8 @@ export default {
         // primary: 'hsl(var(--color-primary) / <alpha-value>)',
         // secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
         // 3. Using legacy rgba
-        primary: 'rgba(var(--color-primary), <alpha-value>)',
-        secondary: 'rgba(var(--color-secondary), <alpha-value>)',
+        primary: "rgba(var(--color-primary), <alpha-value>)",
+        secondary: "rgba(var(--color-secondary), <alpha-value>)",
       },
     },
   },

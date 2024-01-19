@@ -1,5 +1,5 @@
-import {forwardRef} from "react";
-import {useButton, Ripple, Spinner} from "@nextui-org/react";
+import { Ripple, Spinner, useButton } from "@nextui-org/react";
+import { forwardRef } from "react";
 
 interface Props {
   children: React.ReactNode;
@@ -23,7 +23,7 @@ const MyButton = forwardRef<HTMLButtonElement, Props>((props, ref) => {
     ...props,
   });
 
-  const {ripples, onClear} = getRippleProps();
+  const { ripples, onClear } = getRippleProps();
 
   return (
     <button type="button" ref={domRef} {...getButtonProps()}>
