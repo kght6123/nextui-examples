@@ -1,5 +1,6 @@
 import { Button, Input } from "@nextui-org/react";
 import MyButton from "./atoms/myButton";
+import Issue2270 from "./issues/i2270";
 import { AvatarList } from "./molecules/avatarList";
 import Breadcrumb from "./molecules/breadcrumb";
 
@@ -46,6 +47,10 @@ export default function Sample() {
           // description="inside"
           value={"0"}
         />
+      </section>
+      <section className="flex flex-col p-4 gap-4">
+        // #2270
+        <Issue2270 />
       </section>
     </>
   );
