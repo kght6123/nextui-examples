@@ -1,5 +1,5 @@
 import React, {forwardRef, useMemo} from "react";
-import {InputProps, useInput} from "@nextui-org/react";
+import {InputProps, dataFocusVisibleClasses, useInput} from "@nextui-org/react";
 import {CloseFilledIcon} from "@nextui-org/shared-icons";
 
 const MyInput = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>((props, ref) => {
@@ -29,10 +29,28 @@ const MyInput = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>((
 
   const labelContent = label ? <label {...getLabelProps()}>{label}</label> : null;
 
+  const clearButton = [
+      "p-2",
+      "-m-2",
+      "z-10",
+      // "hidden",
+      "absolute",
+      "right-3",
+      "appearance-none",
+      "outline-none",
+      "select-none",
+      // "opacity-0",
+      "hover:!opacity-100",
+      "cursor-pointer",
+      "active:!opacity-70",
+      "rounded-full",
+      // focus ring
+      ...dataFocusVisibleClasses,
+    ];
   const end = useMemo(() => {
     if (isClearable) {
       return <>
-        <span {...getClearButtonProps()}>{<CloseFilledIcon />}</span>
+        <span {...getClearButtonProps()} className={`mr-2 ${clearButton.join(" ")}`}>{<CloseFilledIcon />}</span>
         {endContent}
       </>;
     }

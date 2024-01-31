@@ -66,7 +66,7 @@ export default function Sample() {
         <MyInput
           placeholder="Search Tick"
           variant="bordered"
-          endContent={""}
+          endContent={<>あ</>}
           isClearable
         />
       </section>
