@@ -3,6 +3,7 @@ import MyButton from "./atoms/myButton";
 import Issue2270 from "./issues/i2270";
 import { AvatarList } from "./molecules/avatarList";
 import Breadcrumb from "./molecules/breadcrumb";
+import MyInput from "./atoms/myInput";
 
 export default function Sample() {
   return (
@@ -36,6 +37,37 @@ export default function Sample() {
               <span className="text-default-400 text-small">@gmail.com</span>
             </div>
           }
+        />
+      </section>
+      <section className="flex flex-col p-4 gap-4">
+        // #2254
+        <Input
+          isClearable
+          type="email"
+          label="Email"
+          variant="bordered"
+          placeholder="Enter your email"
+          defaultValue="junior@nextui.org"
+          onClear={() => console.log("input cleared")}
+          className="max-w-xs"
+        />
+      </section>
+      <section className="flex flex-col p-4 gap-4">
+        // #2254
+        <Input
+          placeholder="Search Tick"
+          variant="bordered"
+          endContent={""}
+          isClearable
+        />
+      </section>
+      <section className="flex flex-col p-4 gap-4">
+        // #2254 fix
+        <MyInput
+          placeholder="Search Tick"
+          variant="bordered"
+          endContent={""}
+          isClearable
         />
       </section>
       <section className="flex flex-col p-4 gap-4">
